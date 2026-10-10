@@ -1,0 +1,12 @@
+computer_name = input("Enter the computer name: ")
+ip_address = input("Enter the IP address: ")
+operating_system = input("Enter the operating system: ")
+logged_in_user = input("Enter the logged in user-name: ")
+is_connected_to_network = input("Is the computer connected to a network? (Ture/False): ")
+
+print("\nWorkstation Configuration Summary:")
+print("Computer Name:", computer_name)
+print("IP Address:", ip_address)
+print("Operating System:", operating_system)
+print("Logged In User:", logged_in_user)
+print("Connected to Network:", is_connected_to_network)
