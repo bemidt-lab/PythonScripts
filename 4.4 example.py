@@ -11,6 +11,9 @@ print("Operating System:", operating_system)
 print("Logged In User:", logged_in_user)
 print("Connected to Network:", is_connected_to_network)
 
-print("\nHi", logged_in_user, "!")
+print(f"\nHi {logged_in_user}!")
 favorite_number = input("What is your favorite number?: ")
-print("Your favorite number is", favorite_number, "...nice choice!")
+print(f"Your favorite number is {favorite_number}...nice choice!")
+
+username = logged_in_user + favorite_number
+print(f"Your username is {username}.")
