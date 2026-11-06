@@ -1,10 +1,10 @@
-# List of server hostnames in the data center
-servers = ["web01", "db01", "auth01", "backup01"]
+# User-defined function to calculate total uptime
+def calculate_total_uptime(hours_day1, hours_day2, hours_day3, hours_day4, hours_day5):
+    total_uptime = hours_day1 + hours_day2 + hours_day3 + hours_day4 + hours_day5
+    return total_uptime
 
-# Access and display specific servers
-print("Primary web server:", servers[0])
-print("Database server:", servers[1])
+# Call the function with recorded daily uptime values
+weekly_uptime = calculate_total_uptime(24, 24, 23, 24, 22)
 
-# Display the total number of servers
-server_count = len(servers)
-print("Total number of servers:", server_count)
+# Display the returned result
+print("Total weekly server uptime (hours):", weekly_uptime)
